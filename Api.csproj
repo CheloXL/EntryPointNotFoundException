@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+        <Features>strict</Features>
+        <AnalysisLevel>latest-recommended</AnalysisLevel>
+
+        <AssemblyName>Blinkay.Control</AssemblyName>
+        <AssemblyTitle>$(AssemblyName)</AssemblyTitle>
+        <RootNamespace>$(AssemblyName)</RootNamespace>
+        <PublishReadyToRun>true</PublishReadyToRun>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="OneOf" Version="3.0.243" />
+        <PackageReference Include="OneOf.SourceGenerator" Version="3.0.243" />
+        
+        <PackageReference Include="Mediator.Abstractions" Version="2.1.1" />
+        <PackageReference Include="Mediator.SourceGenerator" Version="2.1.1">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+</Project>
